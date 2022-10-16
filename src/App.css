@@ -1,38 +1,85 @@
 .App {
   text-align: center;
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.container {
+  width: 50%;
+  height: 80%;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  margin: 50px 16px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #dddddd;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  overflow: scroll;
+  overflow-x: hidden;
+
+  padding: 0 0 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.container-answer {
+  width: 40%;
+  height: 80%;
+
+  margin: 50px 16px;
+
+  border: 1px solid black;
+
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.group-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  margin-bottom: 10px;
+}
+
+.group-header {
+  margin: 10px;
+}
+
+.group-item{
+ padding: 16px 16px 0;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+}
+
+.group-item_text {
+  margin: 0;
+  padding: 0 0 10px;
+
+  text-align: left;
+}
+
+.group-item_input {
+  height: 32px;
+
+  font-size: 18px;
+}
+
+
+.group-footer {
+  margin-top: 16px;
+}
+
+.answer-container{
+  margin: 16px;
+
+  text-align: justify;
 }
